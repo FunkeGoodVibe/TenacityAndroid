@@ -1,0 +1,1180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" First name"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/editTextFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/name"
+                android:layout_centerHorizontal="true" />
+
+
+            <TextView
+                android:id="@+id/surname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Surname"
+                android:layout_below="@+id/editTextFirstName"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/editTextSurname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:layout_below="@+id/surname"
+                android:layout_centerHorizontal="true" />
+
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Date of birth"
+                android:layout_below="@+id/editTextSurname"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <DatePicker
+                android:id="@+id/datePickerDateOfBirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/age"
+                android:layout_centerHorizontal="true"
+                android:datePickerMode = "spinner"
+                android:calendarViewShown="false"/>
+
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Gender"
+                android:layout_below="@+id/datePickerDateOfBirth"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginStart="50dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/houseAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" House Address"
+                android:layout_below="@+id/radioGroupGender"
+                android:layout_marginTop="23dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/editTextHouseAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/houseAddress"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/postCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Post code"
+                android:layout_below="@+id/editTextHouseAddress"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/editTextPostCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/postCode"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/homeNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Home telephone number"
+                android:layout_below="@+id/editTextPostCode"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/editTextHomeTelephoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/homeNumber"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/mobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Mobile telephone number"
+                android:layout_below="@+id/editTextHomeTelephoneNumber"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/editTextMobileTelephoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/mobileNumber"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Email"
+                android:layout_below="@+id/editTextMobileTelephoneNumber"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/editTextProfileActivityEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/email"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <TextView
+                android:id="@+id/parentingGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" How did you find out about this \n parenting group?"
+                android:layout_below="@+id/editTextProfileActivityEmail"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/editTextHowDidYouFindOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/parentingGroup"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <TextView
+                android:id="@+id/otherGroups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Have you attended a parenting group \n before?"
+                android:layout_below="@+id/editTextHowDidYouFindOut"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupParentingGroups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/otherGroups"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_Yes_Being_A_Parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes, another Being a Parent group" />
+
+                <RadioButton
+                    android:id="@+id/radio_Yes_Different_Group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes- a different group" />
+
+                <RadioButton
+                    android:id="@+id/radio_No_Groups"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/loneParent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Are you a lone parent?"
+                android:layout_below="@+id/radioGroupParentingGroups"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupLoneParent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loneParent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonYesLoneParent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonNoLoneParent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/secondLangauge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Is English your second language?"
+                android:layout_below="@+id/radioGroupLoneParent"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSecondLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/secondLangauge"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonYesSecondLangauge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonNoSecondLangauge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/otherLangauges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" If yes, what languages are spoken at \n home?"
+                android:layout_below="@+id/radioGroupSecondLanguage"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/editTextSecondLangauge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/otherLangauges"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/disabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Do you consider yourself disabled?"
+                android:layout_below="@+id/editTextSecondLangauge"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupAreYouDisabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/disabled"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonYesDisabled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonNoDisabled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+            </RadioGroup>
+
+
+
+            <TextView
+                android:id="@+id/ethnicGroups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" To which of these groups do you \n consider you belong? \n Please select one:"
+                android:layout_below="@+id/radioGroupAreYouDisabled"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupEthnicity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ethnicGroups"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ethnicGroupWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text=" White:"
+                    android:layout_below="@+id/radioGroupEthnicity"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonWhiteBritish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="British" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonWhiteIrish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Irish" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonWhiteOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Any other White background" />
+
+                <TextView
+                    android:id="@+id/ethnicGroupBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text=" Black or Black British:"
+                    android:layout_below="@+id/radioButtonWhiteOther"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonCaribbean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caribbean" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonAfrican"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="African" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonBlackOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Any other Black background" />
+
+
+                <TextView
+                    android:id="@+id/ethnicGroupAsian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text=" Asian or Asian British:"
+                    android:layout_below="@+id/radioButtonBlackOther"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonIndian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indian" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonPakistani"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pakistani" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonBangladeshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bangladeshi" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonAsianOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Any other Asian background" />
+
+
+                <TextView
+                    android:id="@+id/ethnicGroupMixedRace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text=" Mixed race:"
+                    android:layout_below="@+id/radioButtonAsianOther"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonWhiteAndBlackCaribbean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="White and Black Caribbean" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonWhiteAndBlackAfrican"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="White and Black African" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonWhiteAndAsian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="White and Asian" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonMixedOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Any other Mixed background" />
+
+
+                <TextView
+                    android:id="@+id/ethnicGroupChineseAndOtherRace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text=" Chinese or other ethnic group:"
+                    android:layout_below="@+id/radioButtonMixedOther"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonChinese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chinese" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonChineseAndOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other" />
+
+
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editTextOtherEthnicity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/radioGroupEthnicity"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/levelOfEducation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Level of education:"
+                android:layout_below="@+id/editTextOtherEthnicity"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupLevelOfEducation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/levelOfEducation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonLeftSchoolBefore11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Left school before age 11" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonAttentedSchoolUpTo11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Attended school up to about age 11" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonLeftSchoolBefore16WithNoQualifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Left school before age 16 without qualifications
+" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonLeftSchoolBefore16WithQualifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Left school before age 16 with qualifications
+" />
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonAttentedFurtherEducation16-18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Attended further secondary education
+   (age 16-18)" />
+
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonUniversityEducationCompleted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="University education completed" />
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonUniversityEducationNotCompleted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="University education begun but not completed" />
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonOtherQualifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Any other qualification e.g.NVQ" />
+
+
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/workStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Work status:"
+                android:layout_below="@+id/radioGroupLevelOfEducation"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupWorkStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/workStatus"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonFullTIme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Full-time" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonParttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Part-time" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonLookingAfterHomeOrFamily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Looking after home/family" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonUnemployed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unemployed">
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radioButtonStudent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student" />
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonWorkStatusOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other, please write" />
+
+            </RadioGroup>
+
+
+            <EditText
+                android:id="@+id/editTextOtherWorkStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/radioGroupWorkStatus"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/typeOfHousing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Type of housing:"
+                android:layout_below="@+id/editTextOtherWorkStatus"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupTypeOfHousing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/typeOfHousing"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonPrivatelyRented"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privately rented" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonRentedFromHousingAssociation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rented from housing association" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonRentedFromLocalAuthority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rented from local authority" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOwner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Owner/occupier">
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radioButtonSharedOwndership"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shared ownership (part buy/part rent)" />
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonTemporaryAccommodation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temporary accommodation" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/aboutYourchildren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" About your children:"
+                android:layout_below="@+id/radioGroupTypeOfHousing"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <TextView
+                android:id="@+id/numberOfChildren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Number of children:"
+                android:layout_below="@+id/aboutYourchildren"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+
+            <EditText
+                android:id="@+id/editTextNumberOfChildren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/numberOfChildren"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/child1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Child's name:"
+                android:layout_below="@+id/editTextNumberOfChildren"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <EditText
+                android:id="@+id/editTextNameOfChild1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/child1Name"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/child1DOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Child's date of birth:"
+                android:layout_below="@+id/editTextNameOfChild1"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <DatePicker
+                android:id="@+id/datePickerFirstChildDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/child1DOB"
+                android:layout_centerHorizontal="true"
+                android:datePickerMode = "spinner"
+                android:calendarViewShown="false"/>
+
+            <TextView
+                android:id="@+id/child2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Child 2's name:"
+                android:layout_below="@+id/datePickerFirstChildDOB"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <EditText
+                android:id="@+id/editTextNameOfChild2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/child2Name"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/child2DOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Child 2's date of birth:"
+                android:layout_below="@+id/editTextNameOfChild2"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <DatePicker
+                android:id="@+id/datePickerSecondChildDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/child2DOB"
+                android:layout_centerHorizontal="true"
+                android:datePickerMode = "spinner"
+                android:calendarViewShown="false"/>
+
+            <TextView
+                android:id="@+id/child3Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Child 3's name:"
+                android:layout_below="@+id/datePickerSecondChildDOB"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <EditText
+                android:id="@+id/editTextNameOfChild3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/child3Name"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/child3DOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Child 3's date of birth:"
+                android:layout_below="@+id/editTextNameOfChild3"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <DatePicker
+                android:id="@+id/datePickerThirdChildDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/child3DOB"
+                android:layout_centerHorizontal="true"
+                android:datePickerMode = "spinner"
+                android:calendarViewShown="false"/>
+
+
+            <TextView
+                android:id="@+id/child4Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Child 4's name:"
+                android:layout_below="@+id/datePickerThirdChildDOB"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <EditText
+                android:id="@+id/editTextNameOfChild4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/child4Name"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/child4DOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Child 4's date of birth:"
+                android:layout_below="@+id/editTextNameOfChild4"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <DatePicker
+                android:id="@+id/datePickerForthChildDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/child4DOB"
+                android:layout_centerHorizontal="true"
+                android:datePickerMode = "spinner"
+                android:calendarViewShown="false"/>
+
+
+            <TextView
+                android:id="@+id/infoAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Please answer the rest of the questions about one of your children. If you have more than one, answer about the child you'd like to focus on in the group (they should be aged between 2 and 11)"
+                android:layout_below="@+id/datePickerForthChildDOB"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <TextView
+                android:id="@+id/selectOneChild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Child's date of birth:"
+                android:layout_below="@+id/infoAbout"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <DatePicker
+                android:id="@+id/datePickerOneChildDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectOneChild"
+                android:layout_centerHorizontal="true"
+                android:datePickerMode = "spinner"
+                android:calendarViewShown="false"/>
+
+            <TextView
+                android:id="@+id/childsGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Child's gender:"
+                android:layout_below="@+id/datePickerOneChildDOB"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupChildGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/childsGender"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_maleChild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="male" />
+
+                <RadioButton
+                    android:id="@+id/radio_femaleChild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="female"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginStart="50dp" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/relationshipToYourChild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Your relationship to your child:"
+                android:layout_below="@+id/radioGroupChildGender"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupChildRelationship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relationshipToYourChild"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMother"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mother" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Father" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFosterParent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Foster parent" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonGrandparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grandparent"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonParentsPartner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parent's partner (in same household)" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOlderSibling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Older sibling" />
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonChildRelationshipOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"/>
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/childsDisability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Does your child have a disability that seriously affects their learning or behaviour?"
+                android:layout_below="@+id/radioGroupChildRelationship"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupChildDisability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/childsDisability"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonYesDisability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonNoDisability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginStart="50dp" />
+
+            </RadioGroup>
+
+
+
+
+            <Button
+                android:id="@+id/button_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:layout_below="@+id/radioGroupChildDisability"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </FrameLayout>
+</ScrollView>

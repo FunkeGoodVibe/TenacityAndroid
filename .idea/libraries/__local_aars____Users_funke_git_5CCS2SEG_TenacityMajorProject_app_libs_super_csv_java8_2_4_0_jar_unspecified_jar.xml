@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="__local_aars__:/Users/funke/git/5CCS2SEG/TenacityMajorProject/app/libs/super-csv-java8-2.4.0.jar:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/super-csv-java8-2.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/app/libs/super-csv-java8-2.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/app/libs/super-csv-java8-2.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

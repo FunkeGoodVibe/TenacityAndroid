@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Being A Parent</string>
+    <string name="login">log in</string>
+    <string name="signup">sign up</string>
+    <string name="title_activity_newl_coursework">NewlCourseworkActivity</string>
+</resources>

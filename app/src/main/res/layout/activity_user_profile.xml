@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="kingscollegelondon.segmajorproject.UserProfileActivity">
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap on camera to choose profile picture"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@+id/textViewCamera"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/ic_camera_enhance_black_24dp"
+            android:scaleType="centerCrop" />
+
+
+        <EditText
+            android:id="@+id/editTextFirstNameUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:hint="Enter your name" />
+
+
+        <EditText
+            android:id="@+id/editTextSurnameUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextFirstNameUserProfile"
+            android:hint="Enter your last name" />
+
+        <EditText
+            android:id="@+id/editTextTelephoneNumberUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextSurnameUserProfile"
+            android:hint="Enter your phone number"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextNumberOfKidsUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextTelephoneNumberUserProfile"
+            android:hint="How many children?"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextNameOfChildUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextNumberOfKidsUserProfile"
+            android:hint="Name of child" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_below="@+id/editTextNameOfChildUserProfile"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/buttonSaveUserProfile"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Save"
+            android:textSize="17dp"
+            android:background="@drawable/shape"/>
+
+        <Button
+            android:id="@+id/buttonLogOut"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Log out"
+            android:textSize="17dp"
+            android:background="@drawable/shape"/>
+</LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>
+</ScrollView>
