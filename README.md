@@ -8,7 +8,7 @@ This project began January 2018.
 We presented the completed project to our client at the end of March 2018. 
 
 
-    Download Dr Josh Video Tutorial 
+    Download Dr Josh Video Tutorial.m4a
     
 
 from the TenacityiOS repository. 
